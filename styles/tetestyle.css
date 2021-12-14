@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+.services h2 {
+	display: inline-block;
+	padding: 10px;
+	text-transform: uppercase;
+	/* font-size: 24px;*/
+	margin-bottom: 25px
+}
+
+.services h2 {
+	border-bottom: 1.2px #c4d6e2 solid
+}
