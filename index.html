@@ -25,11 +25,9 @@
 				alt="Java Software Developers">
 			<h1 class="display-5 fw-bold">Tete Ewan Software</h1>
 			<div class="col-lg-6 mx-auto">
-				<p class="lead mb-4">20 years’ experience in software
-					development working on various Java applications using a variety of
-					architectures. Strong communication skills coupled with the ability
-					to routinely deliver high-quality work to demanding deadlines.
-					Highly effective contributors and team players. Strong supporters
+				<p class="lead mb-4">Over 20 years of expertise in building high-quality software solutions. 
+				Proven track record in delivering Spring Boot microservices and REST APIs within hybrid cloud environments. 
+				Adept at modernising legacy systems, driving efficiency, and working within Agile frameworks. Strong supporters
 					of agile development practices.</p>
 				<div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
 				</div>
@@ -51,7 +49,7 @@
 	<div class="container">
 		<footer
 			class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-			<p class="col-md-4 mb-0 text-muted">&copy; 2022 Tete Ewan Software Ltd</p>
+			<p class="col-md-4 mb-0 text-muted">&copy; <span id="currentYear"></span> Tete Ewan Software Ltd</p>
 
 			<a href="/"
 				class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
@@ -71,10 +69,16 @@
 	<!-- Optional JavaScript -->
 
 	<!-- Bootstrap Bundle with Popper -->
-	<script
-		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+	<script	src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-		crossorigin="anonymous"></script>
+		crossorigin="anonymous">
+	</script>
+	<script>
+        // Update the year on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+        });
+    </script>
 
 	
 </body>
