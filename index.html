@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<!-- Required meta tags -->
@@ -54,9 +54,9 @@
 				&copy; <span id="currentYear"></span> Tete Ewan Software Ltd
 			</p>
 
-			<a href="/"
+			<a href="#"
 				class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-				<img class="bi me-2" width="40" height="32"	src="images/CodeSphereBlack.svg">
+				<img class="bi me-2" width="40" height="32"	src="images/CodeSphereBlack.svg" alt="Java Software Developers">
 			</a>
 
 			<ul class="nav col-md-4 justify-content-end">
@@ -67,7 +67,13 @@
 			</ul>
 		</footer>
 	</div>
-	<!-- Optional JavaScript -->
+	<!-- JavaScript -->
+	<script>
+		// Update the year on page load
+		document.addEventListener('DOMContentLoaded', function() {
+			document.getElementById('currentYear').textContent = new Date().getFullYear().toString();
+		});
+	</script>
 
 	<!-- Bootstrap Bundle with Popper -->
 	<script
@@ -76,12 +82,7 @@
 		crossorigin="anonymous">
 		
 	</script>
-	<script>
-		// Update the year on page load
-		document.addEventListener('DOMContentLoaded', function() {
-			document.getElementById('currentYear').textContent = new Date().getFullYear();
-		});
-	</script>
+
 
 
 </body>
